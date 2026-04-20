@@ -1,9 +1,6 @@
-from _typeshed import ProfileFunction
 from pathlib import Path
-from re import L
 
 import matplotlib.pyplot as plt
-import numpy as np
 import torch
 from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
 
