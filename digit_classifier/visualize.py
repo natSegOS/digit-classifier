@@ -116,3 +116,15 @@ def save_noise_comparison(
     fig.savefig(path, dpi=200)
     plt.close(fig)
 
+
+def save_processed_input_preview(image_tensor: torch.Tensor, path: Path) -> None:
+    image = image_tensor.reshape(8, 8).numpy()
+
+    fig, ax = plt.subplots(figsize=(4, 4))
+    ax.imshow(image, cmap="gray")
+    ax.set_title("Processed 8x8 Input")
+    ax.axis("off")
+    fig.tight_layout()
+    fig.savefig(path, dpi=200)
+    plt.close(fig)
+
