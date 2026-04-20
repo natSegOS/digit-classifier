@@ -26,6 +26,7 @@ class Config:
     batch_size: int = 64
     learning_rate: float = 1e-3
     num_epochs: int = 10
+    noise_std: float = 0.2
 
     # Output paths
     output_dir: Path = Path("results")
